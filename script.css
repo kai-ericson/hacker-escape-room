@@ -1,6 +1,11 @@
 html {
-  color: #011827;
+  color: black;
   font-family: Roboto, sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
 header {
@@ -12,8 +17,8 @@ header {
 }
 
 .logo {
-  padding-top: 26px;
-  padding-left: 27px;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
   width: 128px;
   height: 82px;
 }
@@ -29,8 +34,9 @@ nav {
 h1 {
   width: 76px;
   font-size: 24px;
-  margin-top: 25px;
+  margin-top: 1.5rem;
   margin-left: 13px;
+  font-weight: 600;
 }
 
 h2 {
@@ -67,37 +73,61 @@ ul {
 .storyBox {
   background-color: #011827;
   color: white;
-}
-
-.storyText {
-  padding: 1rem;
+  padding: 2em;
+  font-size: 24px;
 }
 
 .storyBtn {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   border-color: #8ACFE5;
-  background-color: white;
+  background-color: #011827;
   color: #8ACFE5;
-  padding: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+}
+
+.storyText {
+  text-align: center;
+}
+
+.quote {
+  display: flex;
+  width: 90%;
 }
 
 .quoteFace {
-  height: 72px;
+  width: 75px;
   border-radius: 50%;
+  margin: 1rem;
+}
+
+.quoteText {
+  font-style: italic;
+}
+
+.quoteFacts {
+  width: 100%;
 }
 
 .roomCard {
   width: 363px;
   height: 446px;
   margin: 10px;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
+  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .roomImg {
-  width: 363px;
-  height: 219px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .onSiteBtn {
@@ -106,7 +136,12 @@ ul {
   border: none;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-size: 24px;
   display: flex;
 }
@@ -116,6 +151,12 @@ ul {
   background-color: white;
   color: #36769d;
   text-decoration: underline;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 2em;
 }
 
 .rating {
@@ -125,17 +166,22 @@ ul {
 .ratingStar {
   display: flex;
   height: 15px;
-  margin: 3px;
+  margin-left: 6px;
 }
 
 .participantInfo {
   display: flex;
+  padding-left: 1rem;
   font-size: 14px;
 }
 
 .roomInfo {
   padding-left: 17px;
   padding: 17px;
+}
+
+.roomText {
+  width: 363px;
 }
 
 .oneRow {
@@ -147,10 +193,14 @@ ul {
   background-color: #E3170A;
   color: white;
   border: none;
-  height: 44px;
-  width: 179px;
+  font-size: 16px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
   float: right;
-  margin: 10px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .groupCoding {
@@ -176,6 +226,12 @@ ul {
 
 button {
   border-radius: 3px;
+}
+
+.roomCards {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
 }
 
 /*# sourceMappingURL=script.css.map */
