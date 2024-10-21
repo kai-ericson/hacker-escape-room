@@ -1,6 +1,6 @@
 @import "header.scss";
 @import "cards.scss";
-
+@import "footer.scss";
 $lightRed: #E3170A;
 $lightblue: #8ACFE5;
 $mediumBlue: #36769d;
@@ -43,15 +43,9 @@ h4{
 }
 h5{
     font-weight: bold;
+    font-size: 18px;
 }
-footer{
-    background-color: $navyBlue;
-    color: white;
-    padding: 1em;
-}
-ul{
-    list-style-type: none;
-}
+
 .storyBox{
     background-color: $navyBlue;
     color: white;
@@ -161,7 +155,9 @@ button{
     flex-direction: row;
     overflow: auto;
 }
-
+.footerText{
+    font-size: 18px;
+}
 @media screen and  (min-width: 800px) {
     
 }
