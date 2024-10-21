@@ -1,3 +1,6 @@
+@import "header.scss";
+@import "cards.scss";
+
 $lightRed: #E3170A;
 $lightblue: #8ACFE5;
 $mediumBlue: #36769d;
@@ -13,26 +16,8 @@ body{
     padding: 0px;
     margin: 0px;
 }
-header{
-    background-color: $navyBlue;
-    color: white;
-    display: flex;
-    height: 144px;
-    width: 100%;
-}
-.logo{
-    padding-top: 1.5rem;
-    padding-left: 1rem;
-    width: 128px;
-   
-    height: 82px;
-}
-.headImg{
-    width:100%;
-}
-nav{
-    display: none;
-}
+
+
 h1{
     width: 76px;
     font-size: 24px;
@@ -51,8 +36,10 @@ h3{
 h4{
     font-size: 30px;
     font-weight: bold;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    margin-bottom: 0px;
 }
 h5{
     font-weight: bold;
@@ -108,22 +95,7 @@ ul{
 .quoteFacts{
     width: 100%
 }
-.roomCard{
-    width: 363px;
-    height: 446px;
-    margin: 10px;
-    box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.1);
-    border-radius: 10px;  
-    display: inline-block;
-    
-}
-.roomImg{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-    
 
-}
 .onSiteBtn{
     background-color: $lightblue;
     color: $navyBlue;
@@ -152,53 +124,13 @@ ul{
     margin-bottom: 2em;
 
 }
-
-.rating{
-    display: flex;
-
-}
-
-.ratingStar{
-    display: flex;
-    height: 15px;
-    margin-left: 6px;
-    
-}
-.participantInfo{
-    display: flex;
+.infoText{
     padding-left: 1rem;
-    font-size: 14px;
-   
-}
-.roomInfo{
-    padding-left: 17px;
-    padding: 17px;
-    
-}
-.roomText{
-    width: 363px;
-}
-.oneRow{
-    display: flex;
-    flex-direction: row;
-
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
 }
 
-.bookRoom{
-    background-color: $lightRed;
-    color: white;
-    border: none;
-    font-size: 16px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    float: right;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-   
-    
-}
 .groupCoding{
     width: 100%;
     
@@ -214,15 +146,22 @@ ul{
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
+    margin-left: 1rem;
+    margin-bottom: 3em;
+    margin-top: 2rem;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 2em;
+   
 }
 button{
-    border-radius: 3px;
+    border-radius: 2px;
 }
 .roomCards{
     display: flex;
     flex-direction: row;
     overflow: auto;
+}
+
+@media screen and  (min-width: 800px) {
+    
 }

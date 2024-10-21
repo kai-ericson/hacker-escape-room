@@ -1,0 +1,27 @@
+$lightRed: #E3170A;
+$lightblue: #8ACFE5;
+$mediumBlue: #36769d;
+$navyBlue: #011827;
+$grey: #B6BDB5; 
+
+header{
+    background-color: $navyBlue;
+    color: white;
+    display: flex;
+    height: 144px;
+    width: 100%;
+}
+.logo{
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    width: 128px;
+   
+    height: 82px;
+}
+.headImg{
+    width:100%;
+}
+
+nav{
+    display: none;
+}

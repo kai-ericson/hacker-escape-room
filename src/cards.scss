@@ -1,0 +1,60 @@
+.roomCard{
+    width: 363px;
+    height: 446px;
+    margin: 10px;
+    box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;  
+    display: inline-block;
+    
+}
+.roomImg{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.rating{
+    display: flex;
+
+}
+
+.ratingStar{
+    display: flex;
+    height: 15px;
+    margin-left: 6px;
+    
+}
+.participantInfo{
+    display: flex;
+    padding-left: 1rem;
+    font-size: 14px;
+   
+}
+.roomInfo{
+    padding-left: 17px;
+    padding: 17px;
+    
+}
+.roomText{
+    width: 363px;
+}
+.oneRow{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.bookRoom{
+    background-color: $lightRed;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    float: right;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+   
+    
+}
