@@ -1,3 +1,8 @@
+.roomCards{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
 .roomCard{
     width: 363px;
     height: 446px;

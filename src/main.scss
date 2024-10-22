@@ -71,23 +71,32 @@ h5{
 .storyText{
     text-align: center;
 }
+
 .quote{
     display: flex;
-    width: 90%;
+    flex-direction: row;
    
+    width: 90%; 
 }
+
 .quoteFace{
     width: 75px;
-   
+    height: 75px;
     border-radius: 50%;
     margin: 1rem;
+    padding-top: 1rem;
 }
+
 .quoteText{
     font-style: italic;
-    
+    font-size: 24px;
+    width: 300px;
 }
+
 .quoteFacts{
-    width: 100%
+    font-size: 18px;
+    
+    
 }
 
 .onSiteBtn{
@@ -105,6 +114,7 @@ h5{
     font-size: 24px;
     display: flex;
 }
+
 .onlineBtn{
     border: none;
     background-color: white;
@@ -145,19 +155,14 @@ h5{
     margin-top: 2rem;
     font-size: 20px;
     font-weight: bold;
+    margin-right: 1rem;
    
 }
 button{
     border-radius: 2px;
 }
-.roomCards{
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-}
-.footerText{
-    font-size: 18px;
-}
+
+
 @media screen and  (min-width: 800px) {
     
 }
