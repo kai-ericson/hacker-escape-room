@@ -1,6 +1,8 @@
 @use "header.scss";
 @use "cards.scss";
 @use "footer.scss";
+@use "quotes.scss";
+
 $lightRed: #E3170A;
 $lightBlue: #8ACFE5;
 $mediumBlue: #36769d;
@@ -205,42 +207,6 @@ h4{
     
 }
 
-.quote{
-    display: flex;
-    flex-direction: row;
-    width: 90%; 
-}
-@media screen and  (min-width: 800px) {
-    .quote{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.quoteImage{
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    margin: 1rem;
-    padding-top: 1rem;
-}
-
-.quoteText{
-    font-style: italic;
-    font-size: 24px;
-    width: 300px;
-    margin-right: 10rem;
-}
-@media screen and  (min-width: 800px) {
-    .quoteText{
-        margin: 1rem;
-    }
-    
-}
-
-.quoteFacts{
-    font-size: 18px;
-}
 @media screen and  (min-width: 800px) {
     .infoBlock{
        display: block;

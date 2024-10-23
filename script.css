@@ -89,7 +89,7 @@ h2 {
 }
 
 @media screen and (min-width: 800px) {
-  .roomCard {
+  .roomCards {
     margin-left: auto;
     margin-right: auto;
   }
@@ -231,6 +231,42 @@ h5 {
 
 .socialMediaList {
   margin-bottom: 4rem;
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+  .quote {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.quoteImage {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 1rem;
+  padding-top: 1rem;
+}
+
+.quoteText {
+  font-style: italic;
+  font-size: 24px;
+  width: 300px;
+  margin-right: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+  .quoteText {
+    margin: 1rem;
+  }
+}
+.quoteFacts {
+  font-size: 18px;
 }
 
 html {
@@ -428,42 +464,6 @@ h4 {
     padding-bottom: 1rem;
   }
 }
-.quote {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-}
-
-@media screen and (min-width: 800px) {
-  .quote {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.quoteImage {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  margin: 1rem;
-  padding-top: 1rem;
-}
-
-.quoteText {
-  font-style: italic;
-  font-size: 24px;
-  width: 300px;
-  margin-right: 10rem;
-}
-
-@media screen and (min-width: 800px) {
-  .quoteText {
-    margin: 1rem;
-  }
-}
-.quoteFacts {
-  font-size: 18px;
-}
-
 @media screen and (min-width: 800px) {
   .infoBlock {
     display: block;
