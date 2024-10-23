@@ -1,17 +1,77 @@
+$lightRed: #E3170A;
+$lightblue: #8ACFE5;
+$mediumBlue: #36769d;
+$navyBlue: #011827;
+$grey: #B6BDB5;
+
 footer{
     background-color: $navyBlue;
     color: white;
     padding: 1rem;
 }
+@media screen and  (min-width: 800px) {
+    footer{
+        display: grid;
+        padding-bottom: 7rem;
+    }
+}
+
+h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+@media screen and  (min-width: 800px) {
+    h5{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin-left: 5rem;
+        margin-top: 7rem;
+    }
+    .socialMedia{
+        grid-column-start: 3;
+        grid-row-start: 1;
+        margin-left: -17rem;
+        
+    }
+    .siteMap{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        margin-left: -30rem;
+    }
+}
+
 .footerText{
     font-size: 18px;
 }
-ul{
+@media screen and  (min-width: 800px) {
+    .footerText{
+        grid-column-start: 1;
+        width: 30%;
+        margin-left: 5rem;
+        margin-top: -1rem;
+      
+    }
+}
+.siteMapList, .socialMediaList{
     list-style-type: none;
     margin-top: -20px;
     li{
         font-size: 18px;
         margin-left: -40px;
+    }
+}
+@media screen and  (min-width: 800px) {
+    .siteMapList{
+        grid-column-start: 2;
+        margin-left: -30rem;
+        
+    }
+}
+@media screen and  (min-width: 800px) {
+    .socialMediaList{
+        grid-column-start: 3;
+        margin-left: -17rem;
+        
     }
 }
 .siteMapList{
