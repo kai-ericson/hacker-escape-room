@@ -1,11 +1,33 @@
 header {
   background-color: #011827;
   color: white;
-  display: flex;
   height: 144px;
   width: 100%;
+  z-index: 1;
 }
 
+@media screen and (min-width: 800px) {
+  header {
+    height: 216px;
+  }
+}
+h1 {
+  width: 76px;
+  font-size: 24px;
+  margin-top: 1.5rem;
+  margin-left: 13px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    width: 100%;
+    margin-top: -3.2rem;
+    margin-left: 10rem;
+    font-size: 40px;
+    width: 100%;
+  }
+}
 .logo {
   padding-top: 1.5rem;
   padding-left: 1rem;
@@ -15,18 +37,63 @@ header {
 
 .headImg {
   width: 100%;
+  margin-top: -144px;
+  object-fit: cover;
 }
 
 nav {
   display: none;
 }
 
+@media screen and (min-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #011827;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0rem;
+    flex-direction: column;
+  }
+  .menu {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu li {
+    display: inline;
+    margin-right: 5rem;
+  }
+  li:hover {
+    cursor: pointer;
+    color: #8ACFE5;
+  }
+}
+h2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+}
 .roomCards {
   display: flex;
   flex-direction: row;
   overflow: auto;
+  margin-left: 1rem;
 }
 
+@media screen and (min-width: 800px) {
+  .roomCard {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .roomCard {
   width: 363px;
   height: 446px;
@@ -92,19 +159,72 @@ footer {
   padding: 1rem;
 }
 
+@media screen and (min-width: 800px) {
+  footer {
+    display: grid;
+    padding-bottom: 7rem;
+  }
+}
+h5 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
+  h5 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-left: 5rem;
+    margin-top: 7rem;
+  }
+  .socialMedia {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .siteMap {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
 .footerText {
   font-size: 18px;
 }
 
-ul {
+@media screen and (min-width: 800px) {
+  .footerText {
+    grid-column-start: 1;
+    width: 55%;
+    margin-left: 5rem;
+    margin-top: -1rem;
+  }
+}
+.siteMapList, .socialMediaList {
   list-style-type: none;
   margin-top: -20px;
 }
-ul li {
+.siteMapList li, .socialMediaList li {
   font-size: 18px;
   margin-left: -40px;
 }
 
+@media screen and (min-width: 800px) {
+  .siteMapList {
+    grid-column-start: 2;
+    margin-right: 7rem;
+    margin-left: 0rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .socialMediaList {
+    grid-column-start: 3;
+    margin-right: 13rem;
+    margin-left: 0rem;
+  }
+}
 .siteMapList {
   margin-bottom: 3rem;
 }
@@ -123,16 +243,13 @@ body {
   margin: 0px;
 }
 
-h1 {
-  width: 76px;
-  font-size: 24px;
-  margin-top: 1.5rem;
-  margin-left: 13px;
-  font-weight: 600;
+@media screen and (min-width: 800px) {
+  body {
+    display: grid;
+  }
 }
-
-h2 {
-  font-size: 32px;
+button {
+  border-radius: 2px;
 }
 
 h3 {
@@ -149,11 +266,128 @@ h4 {
   margin-bottom: 0px;
 }
 
-h5 {
-  font-weight: bold;
-  font-size: 18px;
+@media screen and (min-width: 800px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.onSiteBtn {
+  background-color: #8ACFE5;
+  color: #011827;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 24px;
+  display: flex;
 }
 
+@media screen and (min-width: 800px) {
+  .onSiteBtn {
+    order: 2;
+    margin-top: -50px;
+    margin-bottom: 3em;
+    margin-left: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.onlineBtn {
+  border: none;
+  background-color: white;
+  color: #36769d;
+  text-decoration: underline;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 800px) {
+  .onlineBtn {
+    color: white;
+    background-color: #E3170A;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 3em;
+    margin-top: -50px;
+    margin-right: 1rem;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    order: 1;
+  }
+}
+.lowerOnSiteBtn {
+  background-color: #8ACFE5;
+  color: #011827;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 24px;
+  display: flex;
+}
+
+@media screen and (min-width: 800px) {
+  .lowerOnSiteBtn {
+    order: 2;
+    margin-top: 5rem;
+    margin-bottom: 3em;
+    margin-left: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.lowerOnlineBtn {
+  border: none;
+  background-color: white;
+  color: #36769d;
+  text-decoration: underline;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 800px) {
+  .lowerOnlineBtn {
+    color: white;
+    background-color: #E3170A;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 3em;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    order: 1;
+  }
+}
 .storyBox {
   background-color: #011827;
   color: white;
@@ -176,17 +410,37 @@ h5 {
   font-size: 24px;
 }
 
+@media screen and (min-width: 800px) {
+  .storyBtn {
+    margin-bottom: 4rem;
+  }
+}
 .storyText {
   text-align: center;
 }
 
+@media screen and (min-width: 800px) {
+  .storyText {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    padding-bottom: 1rem;
+  }
+}
 .quote {
   display: flex;
   flex-direction: row;
   width: 90%;
 }
 
-.quoteFace {
+@media screen and (min-width: 800px) {
+  .quote {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.quoteImage {
   width: 75px;
   height: 75px;
   border-radius: 50%;
@@ -198,56 +452,94 @@ h5 {
   font-style: italic;
   font-size: 24px;
   width: 300px;
+  margin-right: 10rem;
 }
 
+@media screen and (min-width: 800px) {
+  .quoteText {
+    margin: 1rem;
+  }
+}
 .quoteFacts {
   font-size: 18px;
 }
 
-.onSiteBtn {
-  background-color: #8ACFE5;
-  color: #011827;
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  font-size: 24px;
-  display: flex;
+@media screen and (min-width: 800px) {
+  .infoBlock {
+    display: block;
+  }
 }
-
-.onlineBtn {
-  border: none;
-  background-color: white;
-  color: #36769d;
-  text-decoration: underline;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+.infoTitleOne {
+  font-size: 32px;
   font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 2em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0px;
 }
 
-.infoText {
+@media screen and (min-width: 800px) {
+  .infoTitleOne {
+    width: 40%;
+    grid-column: 3;
+  }
+}
+.infoTitleTwo {
+  font-size: 32px;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .infoTitleTwo {
+    margin-left: 1rem;
+    width: 45%;
+  }
+}
+.infoTextOne {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 2rem;
   font-size: 24px;
 }
 
+@media screen and (min-width: 800px) {
+  .infoTextOne {
+    margin-right: 1rem;
+  }
+}
+.infoTextTwo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 800px) {
+  .infoTextTwo {
+    margin-left: 1rem;
+  }
+}
 .groupCoding {
   width: 100%;
 }
 
+@media screen and (min-width: 800px) {
+  .groupCoding {
+    width: 50%;
+  }
+}
 .womanCoding {
   width: 100%;
 }
 
+@media screen and (min-width: 800px) {
+  .womanCoding {
+    width: 50%;
+    margin-right: 0px;
+  }
+}
 .redBtn {
   color: white;
   background-color: #E3170A;
@@ -260,12 +552,14 @@ h5 {
   margin-bottom: 3em;
   margin-top: 2rem;
   font-size: 20px;
-  font-weight: bold;
   margin-right: 1rem;
 }
 
-button {
-  border-radius: 2px;
+@media screen and (min-width: 800px) {
+  .redBtn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=script.css.map */
