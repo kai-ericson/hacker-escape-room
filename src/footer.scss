@@ -30,13 +30,15 @@ h5{
     .socialMedia{
         grid-column-start: 3;
         grid-row-start: 1;
-        margin-left: -17rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
         
     }
     .siteMap{
         grid-column-start: 2;
         grid-row-start: 1;
-        margin-left: -30rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
     }
 }
 
@@ -46,7 +48,7 @@ h5{
 @media screen and  (min-width: 800px) {
     .footerText{
         grid-column-start: 1;
-        width: 30%;
+        width: 55%;
         margin-left: 5rem;
         margin-top: -1rem;
       
@@ -63,15 +65,16 @@ h5{
 @media screen and  (min-width: 800px) {
     .siteMapList{
         grid-column-start: 2;
-        margin-left: -30rem;
+        margin-right: 7rem;
+        margin-left: 0rem;
         
     }
 }
 @media screen and  (min-width: 800px) {
     .socialMediaList{
         grid-column-start: 3;
-        margin-left: -17rem;
-        
+        margin-right: 13rem;
+        margin-left: 0rem;
     }
 }
 .siteMapList{
