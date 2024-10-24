@@ -6,6 +6,7 @@ $grey: #B6BDB5;
 
 h2{
     font-size: 32px;
+    text-align: center;
 }
 @media screen and  (min-width: 800px) {
     h2{
@@ -21,8 +22,8 @@ h2{
 }
 @media screen and  (min-width: 800px) {
     .roomCards{
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center;
+        margin: auto;
     }
 }
 .roomCard{
@@ -32,6 +33,7 @@ h2{
     box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.1);
     border-radius: 10px;  
     display: inline-block;
+    margin-left: 2rem;
     
 }
 .roomImg{

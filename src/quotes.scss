@@ -1,37 +1,85 @@
 
 
-.quote{
+.quotes{
     display: flex;
     flex-direction: row;
-    width: 90%; 
+    
 }
 @media screen and  (min-width: 800px) {
-    .quote{
+    .quotes{
+        //width: 100%;
+       // display: flex;
         margin-left: auto;
         margin-right: auto;
     }
 }
+.quoteOne{
+    display: flex;
+    text-align: left;
+}
+@media screen and (min-width: 800px){
+    .quoteOne{
+        margin-right: 1%;
+        grid-area: quoteOne;
+        width: 35em;
+       // width: 50%
+    }
+    
+}
+.quoteTwo{
+    display: none;
+}
+@media screen and (min-width: 800px) {
+    .quoteTwo{
+        display: flex;
+        text-align: left;
+        width: 35em;
+        margin-left: 1%;
+        grid-area: quoteTwo;
+    }
+    
+}
 
 .quoteImage{
-    width: 75px;
-    height: 75px;
+    //width: 75px;
+   // height: 75px;
+    width: 5em;
+    height: 5em;
     border-radius: 50%;
     margin: 1rem;
     padding-top: 1rem;
+}
+@media screen and (min-width: 800px) {
+    .quoteImage{
+        width: 5em;
+        height: 5em;
+    }
+    
 }
 
 .quoteText{
     font-style: italic;
     font-size: 24px;
-    width: 300px;
-    margin-right: 10rem;
+    width: 14em;
+    width:90%;
+    //margin-right: 10rem;
 }
 @media screen and  (min-width: 800px) {
     .quoteText{
-        margin: 1rem;
+        margin-right: 0rem;
+        width: auto;
     }
     
 }
 .quoteFacts{
     font-size: 18px;
+    margin-top: -1em;
+    margin-bottom: 5em;
+    width: 90%;
+}
+@media screen and  (min-width: 800px) {
+    .quoteFacts{
+        width: 17rem;
+    }
+    
 }

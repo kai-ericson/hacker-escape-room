@@ -1,13 +1,15 @@
 header {
+  display: flex;
   background-color: #011827;
   color: white;
   height: 144px;
   width: 100%;
-  z-index: 1;
 }
 
 @media screen and (min-width: 800px) {
   header {
+    display: grid;
+    z-index: 1;
     height: 216px;
   }
 }
@@ -37,10 +39,14 @@ h1 {
 
 .headImg {
   width: 100%;
-  margin-top: -144px;
   object-fit: cover;
 }
 
+@media screen and (min-width: 800px) {
+  .headImg {
+    margin-top: -144px;
+  }
+}
 nav {
   display: none;
 }
@@ -73,6 +79,7 @@ nav {
 }
 h2 {
   font-size: 32px;
+  text-align: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -90,8 +97,8 @@ h2 {
 
 @media screen and (min-width: 800px) {
   .roomCards {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    margin: auto;
   }
 }
 .roomCard {
@@ -101,6 +108,7 @@ h2 {
   box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: inline-block;
+  margin-left: 2rem;
 }
 
 .roomImg {
@@ -168,6 +176,7 @@ footer {
 h5 {
   font-weight: bold;
   font-size: 18px;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -192,6 +201,7 @@ h5 {
 }
 .footerText {
   font-size: 18px;
+  margin-top: -1rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -233,42 +243,81 @@ h5 {
   margin-bottom: 4rem;
 }
 
-.quote {
+.quotes {
   display: flex;
   flex-direction: row;
-  width: 90%;
 }
 
 @media screen and (min-width: 800px) {
-  .quote {
+  .quotes {
     margin-left: auto;
     margin-right: auto;
   }
 }
+.quoteOne {
+  display: flex;
+  text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+  .quoteOne {
+    margin-right: 1%;
+    grid-area: quoteOne;
+    width: 35em;
+  }
+}
+.quoteTwo {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .quoteTwo {
+    display: flex;
+    text-align: left;
+    width: 35em;
+    margin-left: 1%;
+    grid-area: quoteTwo;
+  }
+}
 .quoteImage {
-  width: 75px;
-  height: 75px;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
   margin: 1rem;
   padding-top: 1rem;
 }
 
+@media screen and (min-width: 800px) {
+  .quoteImage {
+    width: 5em;
+    height: 5em;
+  }
+}
 .quoteText {
   font-style: italic;
   font-size: 24px;
-  width: 300px;
-  margin-right: 10rem;
+  width: 14em;
+  width: 90%;
 }
 
 @media screen and (min-width: 800px) {
   .quoteText {
-    margin: 1rem;
+    margin-right: 0rem;
+    width: auto;
   }
 }
 .quoteFacts {
   font-size: 18px;
+  margin-top: -1em;
+  margin-bottom: 5em;
+  width: 90%;
 }
 
+@media screen and (min-width: 800px) {
+  .quoteFacts {
+    width: 17rem;
+  }
+}
 html {
   color: black;
   font-family: Roboto, sans-serif;
@@ -285,12 +334,12 @@ body {
   }
 }
 button {
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 @media screen and (min-width: 800px) {
   button {
-    border-radius: 3px;
+    border-radius: 4px;
   }
 }
 h3 {
@@ -314,6 +363,10 @@ h4 {
   }
 }
 .onSiteBtn {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 2em;
+  padding-right: 2em;
   background-color: #8ACFE5;
   color: #011827;
   border: none;
@@ -321,18 +374,18 @@ h4 {
   margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding-top: 1rem;
+  /*padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 3rem;
-  padding-right: 3rem;
+  padding-right: 3rem;*/
   font-size: 24px;
   display: flex;
 }
 
 @media screen and (min-width: 800px) {
   .onSiteBtn {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     padding-left: 3em;
     padding-right: 3em;
     order: 2;
@@ -347,6 +400,14 @@ h4 {
       padding-bottom: 1em;
       padding-left: 3em;
       padding-right: 3em;*/
+  }
+}
+@media screen and (max-width: 300px) {
+  .onSiteBtn {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 .onlineBtn {
@@ -364,8 +425,8 @@ h4 {
 
 @media screen and (min-width: 800px) {
   .onlineBtn {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     padding-left: 3em;
     padding-right: 3em;
     color: white;
@@ -386,23 +447,27 @@ h4 {
 .lowerOnSiteBtn {
   background-color: #8ACFE5;
   color: #011827;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 3em;
+  padding-right: 3em;
   border: none;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding-top: 1rem;
+  /*padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 3rem;
-  padding-right: 3rem;
+  padding-right: 3rem;*/
   font-size: 24px;
   display: flex;
 }
 
 @media screen and (min-width: 800px) {
   .lowerOnSiteBtn {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     padding-left: 3em;
     padding-right: 3em;
     order: 2;
@@ -415,6 +480,14 @@ h4 {
        padding-right: 3em;*/
   }
 }
+@media screen and (max-width: 300px) {
+  .lowerOnSiteBtn {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
 .lowerOnlineBtn {
   border: none;
   background-color: white;
@@ -425,13 +498,13 @@ h4 {
   margin-right: auto;
   font-weight: bold;
   font-size: 14px;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 @media screen and (min-width: 800px) {
   .lowerOnlineBtn {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     padding-left: 3em;
     padding-right: 3em;
     color: white;
@@ -452,25 +525,30 @@ h4 {
 .storyBox {
   background-color: #011827;
   color: white;
-  padding: 2em;
-  font-size: 24px;
+  padding: 1em;
+  font-size: 28px;
 }
 
 .storyBtn {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
   border-color: #8ACFE5;
   background-color: #011827;
   color: #8ACFE5;
-  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-size: 24px;
 }
 
 @media screen and (min-width: 800px) {
   .storyBtn {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     padding-left: 3em;
     padding-right: 3em;
     margin-bottom: 4rem;
@@ -478,6 +556,7 @@ h4 {
 }
 .storyText {
   text-align: center;
+  margin-top: 2.5em;
 }
 
 @media screen and (min-width: 800px) {
@@ -494,7 +573,7 @@ h4 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
-    grid-template-areas: "imgOne titleOne" "imgOne textOne" "imgOne btnOne" "imgOne ." "titleTwo imgTwo" "textTwo imgTwo" "btnTwo imgTwo" ". imgTwo";
+    grid-template-areas: "imgOne titleOne" "imgOne textOne" "imgOne btnOne" "imgOne ." "titleTwo imgTwo" "textTwo imgTwo" "btnTwo imgTwo";
     margin-bottom: 6rem;
   }
 }
@@ -505,10 +584,11 @@ h4 {
 @media screen and (min-width: 800px) {
   .infoImgOne {
     grid-area: imgOne;
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 .infoTitleOne {
+  text-align: left;
   font-size: 32px;
   font-weight: bold;
   padding-left: 1rem;
@@ -519,10 +599,10 @@ h4 {
 @media screen and (min-width: 800px) {
   .infoTitleOne {
     grid-area: titleOne;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: left;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 .infoTextOne {
@@ -538,18 +618,24 @@ h4 {
     grid-column: 2;
     grid-row: 3;*/
     grid-area: textOne;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .infoBtnOne {
   color: white;
   background-color: #E3170A;
-  border: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   padding-left: 2em;
   padding-right: 2em;
+  border: none;
+  /* padding-top: 1em;
+   padding-bottom: 1em;
+   padding-left: 2em;
+   padding-right: 2em;*/
   margin-left: 1rem;
   margin-bottom: 3em;
   margin-top: 2rem;
@@ -559,17 +645,17 @@ h4 {
 
 @media screen and (min-width: 800px) {
   .infoBtnOne {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     padding-left: 3em;
     padding-right: 3em;
     /*margin-right: 1rem;
     grid-column: 2;
     grid-row: 4;*/
     grid-area: btnOne;
-    margin-left: 20%;
+    margin-left: 17%;
     margin-right: auto;
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
 }
 .infoImgTwo {
@@ -579,12 +665,13 @@ h4 {
 @media screen and (min-width: 800px) {
   .infoImgTwo {
     grid-area: imgTwo;
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 .infoTitleTwo {
   font-size: 32px;
   font-weight: bold;
+  text-align: left;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 0px;
@@ -593,8 +680,8 @@ h4 {
 @media screen and (min-width: 800px) {
   .infoTitleTwo {
     grid-area: titleTwo;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: left;
   }
 }
@@ -608,20 +695,24 @@ h4 {
 @media screen and (min-width: 800px) {
   .infoTextTwo {
     grid-area: textTwo;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 .infoBtnTwo {
   color: white;
   background-color: #E3170A;
-  border: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   padding-left: 2em;
   padding-right: 2em;
+  border: none;
+  /*padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;*/
   margin-left: 1rem;
-  margin-bottom: 3em;
+  margin-bottom: 5rem;
   margin-top: 2rem;
   font-size: 24px;
   margin-right: 1rem;
@@ -629,12 +720,12 @@ h4 {
 
 @media screen and (min-width: 800px) {
   .infoBtnTwo {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     padding-left: 3em;
     padding-right: 3em;
     grid-area: btnTwo;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-right: auto;
   }
 }
