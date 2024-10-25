@@ -74,10 +74,6 @@ h4{
     margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /*padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;*/
     font-size: 24px;
     display: flex;
 }
@@ -88,15 +84,7 @@ h4{
       margin-top: -50px;
       margin-bottom: 3em;
       margin-left: 1rem;
-      /*padding-top: 1em;
-      padding-bottom: 1em;
-      padding-left: 4rem;
-      padding-right: 4rem;
-      padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 3em;
-        padding-right: 3em;*/
-        
+      margin-right: auto; 
     } 
 }
 @media screen and  (max-width: 300px) {
@@ -125,13 +113,11 @@ h4{
         @include desktopButton;
         color:white;
         background-color: $lightRed;
-       /* padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 3em;
-        padding-right: 3em;*/
+
         margin-bottom: 3em;
         margin-top: -50px;
         margin-right: 1rem;
+        margin-left: auto;
         font-size: 24px;
         text-decoration: none;
         font-weight: 500;
@@ -150,10 +136,6 @@ h4{
     margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /*padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;*/
     font-size: 24px;
     display: flex;
 }
@@ -164,10 +146,6 @@ h4{
       margin-top: 5rem;
       margin-bottom: 3em;
       margin-left: 1rem;
-     /* padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 3em;
-        padding-right: 3em;*/
     }
 }
 @media screen and  (max-width: 300px) {
@@ -196,10 +174,6 @@ h4{
         @include desktopButton;
         color:white;
         background-color: $lightRed;
-       /* padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 3em;
-        padding-right: 3em;*/
         margin-bottom: 3em;
         margin-top: 5rem;
         margin-right: 1rem;
@@ -268,8 +242,11 @@ h4{
        "imgOne ."
        "titleTwo imgTwo"
        "textTwo imgTwo"
-       "btnTwo imgTwo";
+       "btnTwo imgTwo"
+       ". imgTwo";
+
       margin-bottom: 6rem;
+     
 
        
     }
@@ -280,12 +257,7 @@ h4{
 @media screen and  (min-width: 800px) {
     .infoImgOne{
         grid-area: imgOne;
-        object-fit: fill;
-       // grid-row-start: 1;
-       // grid-row-end: 5;
-       // grid-column: 1;
-        //grid-row: 1;
-        //grid-column: 1;
+        object-fit: cover;
     }
 }
 
@@ -304,10 +276,6 @@ h4{
         margin-right: 15%;
         text-align: left;
         margin-top: 2rem;
-      //  grid-row: 2;
-       // grid-column: 2;
-       // grid-column: 2;
-        //grid-row: 2;
     }
 }
 
@@ -319,17 +287,11 @@ h4{
 }
 @media screen and  (min-width: 800px) {
     .infoTextOne{
-        /*margin-right: 1rem;
-        grid-column: 2;
-        grid-row: 3;*/
         grid-area: textOne;
         margin-left: 15%;
         margin-right: 15%;
         margin-top: 1rem;
         margin-bottom: 1rem;
-       // grid-row: 3;
-       // grid-column: 2;
-       
     }
 }
 .infoBtnOne{
@@ -337,10 +299,6 @@ h4{
     background-color: $lightRed;
     @include mobileButton();
     border: none;
-   /* padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;*/
     margin-left: 1rem;
     margin-bottom: 3em;
     margin-top: 2rem;
@@ -351,16 +309,10 @@ h4{
 @media screen and  (min-width: 800px) {
         .infoBtnOne{
             @include desktopButton;
-            /*margin-right: 1rem;
-            grid-column: 2;
-            grid-row: 4;*/
             grid-area: btnOne;
             margin-left: 17%;
             margin-right: auto;
-            margin-top: 1rem;
-           // grid-row: 4;
-           // grid-column: 2;
-            
+            margin-top: 1rem; 
         }
 }
 
@@ -371,9 +323,6 @@ h4{
     .infoImgTwo{
         grid-area: imgTwo;
         object-fit: fill;
-       // grid-column: 2;
-       // grid-row-start: 5;
-       //S grid-row-end: 9;
     }
 }
 .infoTitleTwo{
@@ -389,9 +338,8 @@ h4{
         grid-area: titleTwo;
         margin-left: 15%;
         margin-right: 15%;
+        margin-top: 2rem;
         text-align: left;
-       // grid-column: 1;
-        //grid-row: 6;
     }
 }
 
@@ -406,39 +354,28 @@ h4{
         grid-area: textTwo;
         margin-left: 15%;
         margin-right: 15%;
-        //grid-column: 1;
-        //grid-row: 7;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
+
 .infoBtnTwo{
     color:white;
     background-color: $lightRed;
     @include mobileButton();
     border: none;
-    /*padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;*/
     margin-left: 1rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
     font-size: 24px;
-    
     margin-right: 1rem;
 }
 @media screen and  (min-width: 800px) {
         .infoBtnTwo{
             @include desktopButton;
             grid-area: btnTwo;
-            margin-left: 15%;
+            margin-left: 17%;
             margin-right: auto;
+            margin-top: 1rem;
         }
-}
-
-
-
-
-
-@media screen and  (min-width: 800px) {
-    
 }
