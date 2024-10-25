@@ -89,10 +89,10 @@ h4{
 }
 @media screen and  (min-width: 1150px) {
     .onSiteBtn{
-      @include desktopButton;
-      order: 2;
-      margin-top: -50px;
-      margin-bottom: 3em;
+      //@include desktopButton;
+     // order: 2;
+      //margin-top: -50px;
+     // margin-bottom: 3em;
       margin-left: 1rem;
       margin-right: auto; 
     } 
@@ -136,17 +136,17 @@ h4{
 }
 @media screen and  (min-width: 1150px) {
     .onlineBtn{
-        @include desktopButton;
-        color:white;
-        background-color: $lightRed;
-        margin-bottom: 3em;
-        margin-top: -50px;
+        //@include desktopButton;
+       // color:white;
+       // background-color: $lightRed;
+       // margin-bottom: 3em;
+       // margin-top: -50px;
         margin-right: 1rem;
-        margin-left: auto;
-        font-size: 24px;
-        text-decoration: none;
-        font-weight: 500;
-        order: 1;
+      //  margin-left: auto;
+      //  font-size: 24px;
+       // text-decoration: none;
+       // font-weight: 500;
+       // order: 1;
     }
 }
 
@@ -175,10 +175,10 @@ h4{
 }
 @media screen and  (min-width: 1150px) {
     .lowerOnSiteBtn{
-      @include desktopButton;
-      order: 2;
-      margin-top: 5rem;
-      margin-bottom: 3em;
+      //@include desktopButton;
+      //order: 2;
+      //margin-top: 5rem;
+     // margin-bottom: 3em;
       margin-left: 1rem;
       margin-right: auto;
     }
@@ -221,16 +221,16 @@ h4{
 }
 @media screen and  (min-width: 1150px) {
     .lowerOnlineBtn{
-        @include desktopButton;
-        color:white;
-        background-color: $lightRed;
-        margin-bottom: 3em;
-        margin-top: 5rem;
+        //@include desktopButton;
+       // color:white;
+       // background-color: $lightRed;
+       // margin-bottom: 3em;
+       // margin-top: 5rem;
         margin-right: 1rem;
-        font-size: 24px;
-        text-decoration: none;
-        font-weight: 500;
-        order: 1;
+       // font-size: 24px;
+      //  text-decoration: none;
+      //  font-weight: 500;
+      //  order: 1;
     }
 }
 .storyBox{
@@ -239,7 +239,6 @@ h4{
     padding: 1em;
     font-size: 28px;
 }
-
 
 .storyBtn{
     display: flex;
@@ -254,15 +253,16 @@ h4{
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    
     font-size: 24px;
 }
+
 @media screen and  (min-width: 800px) {
     .storyBtn{
         @include desktopButton;
       margin-bottom: 4rem;
     }
 }
+
 .storyText{
     text-align: center;
     margin-top: 2.5em;
@@ -275,17 +275,16 @@ h4{
       font-size: 28px;
       padding-bottom: 1rem;
     }
-
-    
 }
 
 @media screen and  (min-width: 800px) {
     .infoBlock{
        display: grid;
+       width: 100%;
+       margin-bottom: 6rem;
        grid-template-columns: 50% 50%;
        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
        grid-template-areas: 
-       
        "imgOne titleOne"
        "imgOne textOne"
        "imgOne btnOne"
@@ -294,13 +293,9 @@ h4{
        "textTwo imgTwo"
        "btnTwo imgTwo"
         ". imgTwo";
-
-      margin-bottom: 6rem;
-     
-
-       
     }
 }
+
 .infoImgOne{
     width: 100%;
 }
@@ -347,6 +342,7 @@ h4{
         margin-right: 15%;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        
        // grid-column: 2;
        // grid-row: 2;
     }
@@ -400,7 +396,7 @@ h4{
 @media screen and  (min-width: 800px) {
     .infoTitleTwo{
         grid-area: titleTwo;
-        margin-left: 15%;
+       margin-left: 15%;
         margin-right: 15%;
         margin-top: 2rem;
         text-align: left;
@@ -434,6 +430,7 @@ h4{
     font-size: 24px;
     margin-right: 1rem;
 }
+
 @media screen and  (min-width: 800px) {
         .infoBtnTwo{
             @include desktopButton;

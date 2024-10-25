@@ -65,6 +65,32 @@ nav {
   }
   .menu {
     list-style: none;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+  .menu li {
+    display: inline;
+    margin-right: 5rem;
+  }
+  li:hover {
+    cursor: pointer;
+    color: #8ACFE5;
+  }
+}
+@media screen and (min-width: 1150px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #011827;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0rem;
+    flex-direction: column;
+  }
+  .menu {
+    list-style: none;
     margin-left: auto;
     margin-right: auto;
   }
@@ -94,6 +120,12 @@ h2 {
   margin-left: 1rem;
 }
 
+/*@media screen and  (min-width: 1250px) {
+    .roomCards{
+        //margin-left: auto;
+      //  margin-right: auto;
+    }
+}*/
 .roomCard {
   width: 363px;
   height: 446px;
@@ -419,13 +451,6 @@ h4 {
 }
 @media screen and (min-width: 1150px) {
   .onSiteBtn {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-left: 3em;
-    padding-right: 3em;
-    order: 2;
-    margin-top: -50px;
-    margin-bottom: 3em;
     margin-left: 1rem;
     margin-right: auto;
   }
@@ -470,20 +495,7 @@ h4 {
 }
 @media screen and (min-width: 1150px) {
   .onlineBtn {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-left: 3em;
-    padding-right: 3em;
-    color: white;
-    background-color: #E3170A;
-    margin-bottom: 3em;
-    margin-top: -50px;
     margin-right: 1rem;
-    margin-left: auto;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: 500;
-    order: 1;
   }
 }
 .lowerOnSiteBtn {
@@ -516,13 +528,6 @@ h4 {
 }
 @media screen and (min-width: 1150px) {
   .lowerOnSiteBtn {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-left: 3em;
-    padding-right: 3em;
-    order: 2;
-    margin-top: 5rem;
-    margin-bottom: 3em;
     margin-left: 1rem;
     margin-right: auto;
   }
@@ -567,19 +572,7 @@ h4 {
 }
 @media screen and (min-width: 1150px) {
   .lowerOnlineBtn {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-left: 3em;
-    padding-right: 3em;
-    color: white;
-    background-color: #E3170A;
-    margin-bottom: 3em;
-    margin-top: 5rem;
     margin-right: 1rem;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: 500;
-    order: 1;
   }
 }
 .storyBox {
@@ -631,10 +624,11 @@ h4 {
 @media screen and (min-width: 800px) {
   .infoBlock {
     display: grid;
+    width: 100%;
+    margin-bottom: 6rem;
     grid-template-columns: 50% 50%;
     grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     grid-template-areas: "imgOne titleOne" "imgOne textOne" "imgOne btnOne" "imgOne ." "titleTwo imgTwo" "textTwo imgTwo" "btnTwo imgTwo" ". imgTwo";
-    margin-bottom: 6rem;
   }
 }
 .infoImgOne {

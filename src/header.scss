@@ -72,6 +72,35 @@ nav{
     } 
     .menu{
        list-style: none;
+       margin-left: 1rem;
+       margin-right: auto;   
+        li{
+            display: inline;
+            margin-right: 5rem;
+           // margin-right: 10%;
+            
+        }
+    }
+    li:hover{
+        cursor: pointer;
+        color: $lightBlue;
+    }
+}
+@media screen and  (min-width: 1150px) {
+    nav{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       background-color: $navyBlue;
+       color: white;
+       font-size: 24px;
+       font-weight: bold;
+       margin-top: 0rem;
+       flex-direction: column;
+       
+    } 
+    .menu{
+       list-style: none;
        margin-left: auto;
        margin-right: auto;   
         li{
