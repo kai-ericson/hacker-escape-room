@@ -7,8 +7,12 @@
 }
 @media screen and  (min-width: 800px) {
     .quotes{
-        //width: 100%;
-       // display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and  (min-width: 1150px) {
+    .quotes{
         margin-left: auto;
         margin-right: auto;
     }
@@ -17,17 +21,20 @@
     display: flex;
     text-align: left;
 }
-@media screen and (min-width: 800px){
+@media screen and  (min-width: 800px) {
     .quoteOne{
-        //margin-right: 1px;
-        //grid-area: quoteOne;
-        //width: 35em;
-        width: 40%;
+        display: flex;
+        width: 20%;
+    }
+}
+@media screen and (min-width: 1150px){
+    .quoteOne{
+        width: 45%;
         margin-left: 10%;
         margin-right: 1%;
-       // width: 50%
     }  
 }
+
 @media screen and (min-width: 1600px){
     .quoteOne{
         width: 40rem;
@@ -37,18 +44,22 @@
 .quoteTwo{
     display: none;
 }
-@media screen and (min-width: 800px) {
+@media screen and  (min-width: 800px) {
     .quoteTwo{
         display: flex;
-        text-align: left;
-        //width: 35em;
-        width: 40%;
-        margin-left: 1%;
-        margin-right: auto;
-       // margin-left: 1px;
-       // grid-area: quoteTwo;
+        margin-left: 7rem;
+        width: 20%;
     }
 }
+@media screen and (min-width: 1150px) {
+    .quoteTwo{
+        text-align: left;
+        width: 45%;
+        margin-left: 1%;
+        margin-right: 10%;
+    }
+}
+
 @media screen and (min-width: 1600px){
     .quoteTwo{
         width: 40rem;
@@ -73,9 +84,7 @@
 .quoteText{
     font-style: italic;
     font-size: 24px;
-    //width: 14em;
     width:90%;
-    //margin-right: 10rem;
 }
 @media screen and  (min-width: 800px) {
     .quoteText{

@@ -79,14 +79,12 @@ nav {
 }
 h2 {
   font-size: 32px;
-  text-align: center;
 }
 
 @media screen and (min-width: 800px) {
   h2 {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 4rem;
   }
 }
 .roomCards {
@@ -96,22 +94,21 @@ h2 {
   margin-left: 1rem;
 }
 
-@media screen and (min-width: 800px) {
-  .roomCards {
-    text-align: center;
-    margin: auto;
-  }
-}
 .roomCard {
   width: 363px;
   height: 446px;
   margin: 10px;
+  margin-left: 2.5rem;
   box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: inline-block;
-  margin-left: 2rem;
 }
 
+@media screen and (min-width: 800px) {
+  .roomCard {
+    margin-left: 2.5rem;
+  }
+}
 .roomImg {
   width: 100%;
   object-fit: cover;
@@ -255,6 +252,12 @@ h5 {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 1150px) {
+  .quotes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .quoteOne {
   display: flex;
   text-align: left;
@@ -262,7 +265,13 @@ h5 {
 
 @media screen and (min-width: 800px) {
   .quoteOne {
-    width: 40%;
+    display: flex;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .quoteOne {
+    width: 45%;
     margin-left: 10%;
     margin-right: 1%;
   }
@@ -280,10 +289,16 @@ h5 {
 @media screen and (min-width: 800px) {
   .quoteTwo {
     display: flex;
+    margin-left: 7rem;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .quoteTwo {
     text-align: left;
-    width: 40%;
+    width: 45%;
     margin-left: 1%;
-    margin-right: auto;
+    margin-right: 10%;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -386,10 +401,6 @@ h4 {
   margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  /*padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;*/
   font-size: 24px;
   display: flex;
 }
@@ -403,16 +414,20 @@ h4 {
     order: 2;
     margin-top: -50px;
     margin-bottom: 3em;
+    margin-right: 40%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .onSiteBtn {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
+    order: 2;
+    margin-top: -50px;
+    margin-bottom: 3em;
     margin-left: 1rem;
     margin-right: auto;
-    /*padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 1em;
-      padding-bottom: 1em;
-      padding-left: 3em;
-      padding-right: 3em;*/
   }
 }
 @media screen and (max-width: 300px) {
@@ -444,10 +459,23 @@ h4 {
     padding-right: 3em;
     color: white;
     background-color: #E3170A;
-    /* padding-top: 1em;
-     padding-bottom: 1em;
-     padding-left: 3em;
-     padding-right: 3em;*/
+    margin-bottom: 3em;
+    margin-top: -50px;
+    margin-left: auto;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    order: 1;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .onlineBtn {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
+    color: white;
+    background-color: #E3170A;
     margin-bottom: 3em;
     margin-top: -50px;
     margin-right: 1rem;
@@ -470,10 +498,6 @@ h4 {
   margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  /*padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;*/
   font-size: 24px;
   display: flex;
 }
@@ -487,11 +511,20 @@ h4 {
     order: 2;
     margin-top: 5rem;
     margin-bottom: 3em;
+    margin-right: 40%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .lowerOnSiteBtn {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
+    order: 2;
+    margin-top: 5rem;
+    margin-bottom: 3em;
     margin-left: 1rem;
-    /* padding-top: 1em;
-       padding-bottom: 1em;
-       padding-left: 3em;
-       padding-right: 3em;*/
+    margin-right: auto;
   }
 }
 @media screen and (max-width: 300px) {
@@ -523,10 +556,23 @@ h4 {
     padding-right: 3em;
     color: white;
     background-color: #E3170A;
-    /* padding-top: 1em;
-     padding-bottom: 1em;
-     padding-left: 3em;
-     padding-right: 3em;*/
+    margin-bottom: 3em;
+    margin-top: 5rem;
+    margin-left: auto;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    order: 1;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .lowerOnlineBtn {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
+    color: white;
+    background-color: #E3170A;
     margin-bottom: 3em;
     margin-top: 5rem;
     margin-right: 1rem;
@@ -628,9 +674,6 @@ h4 {
 
 @media screen and (min-width: 800px) {
   .infoTextOne {
-    /*margin-right: 1rem;
-    grid-column: 2;
-    grid-row: 3;*/
     grid-area: textOne;
     margin-left: 15%;
     margin-right: 15%;
@@ -646,10 +689,6 @@ h4 {
   padding-left: 2em;
   padding-right: 2em;
   border: none;
-  /* padding-top: 1em;
-   padding-bottom: 1em;
-   padding-left: 2em;
-   padding-right: 2em;*/
   margin-left: 1rem;
   margin-bottom: 3em;
   margin-top: 2rem;
@@ -663,13 +702,11 @@ h4 {
     padding-bottom: 0.8em;
     padding-left: 3em;
     padding-right: 3em;
-    /*margin-right: 1rem;
-    grid-column: 2;
-    grid-row: 4;*/
     grid-area: btnOne;
     margin-left: 17%;
     margin-right: auto;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 .infoImgTwo {
@@ -679,7 +716,7 @@ h4 {
 @media screen and (min-width: 800px) {
   .infoImgTwo {
     grid-area: imgTwo;
-    object-fit: fill;
+    object-fit: cover;
   }
 }
 .infoTitleTwo {
@@ -724,10 +761,6 @@ h4 {
   padding-left: 2em;
   padding-right: 2em;
   border: none;
-  /*padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 2em;*/
   margin-left: 1rem;
   margin-bottom: 5rem;
   margin-top: 2rem;
@@ -744,7 +777,8 @@ h4 {
     grid-area: btnTwo;
     margin-left: 17%;
     margin-right: auto;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 

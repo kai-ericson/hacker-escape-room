@@ -77,7 +77,17 @@ h4{
     font-size: 24px;
     display: flex;
 }
+
 @media screen and  (min-width: 800px) {
+    .onSiteBtn{
+      @include desktopButton;
+      order: 2;
+      margin-top: -50px;
+      margin-bottom: 3em;
+      margin-right: 40%; 
+    } 
+}
+@media screen and  (min-width: 1150px) {
     .onSiteBtn{
       @include desktopButton;
       order: 2;
@@ -108,12 +118,27 @@ h4{
     font-size: 14px;
     margin-bottom: 2em;
 }
+
 @media screen and  (min-width: 800px) {
     .onlineBtn{
         @include desktopButton;
         color:white;
         background-color: $lightRed;
-
+        margin-bottom: 3em;
+        margin-top: -50px;
+      //  margin-right: 1rem;
+        margin-left: auto;
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: 500;
+        order: 1;
+    }
+}
+@media screen and  (min-width: 1150px) {
+    .onlineBtn{
+        @include desktopButton;
+        color:white;
+        background-color: $lightRed;
         margin-bottom: 3em;
         margin-top: -50px;
         margin-right: 1rem;
@@ -142,10 +167,20 @@ h4{
 @media screen and  (min-width: 800px) {
     .lowerOnSiteBtn{
         @include desktopButton;
+        order: 2;
+        margin-top: 5rem;
+        margin-bottom: 3em;
+        margin-right: 40%; 
+    }
+}
+@media screen and  (min-width: 1150px) {
+    .lowerOnSiteBtn{
+      @include desktopButton;
       order: 2;
       margin-top: 5rem;
       margin-bottom: 3em;
       margin-left: 1rem;
+      margin-right: auto;
     }
 }
 @media screen and  (max-width: 300px) {
@@ -170,6 +205,21 @@ h4{
     margin-bottom: 4em;
 }
 @media screen and  (min-width: 800px) {
+    .lowerOnlineBtn{
+        @include desktopButton;
+        color:white;
+        background-color: $lightRed;
+        margin-bottom: 3em;
+        margin-top: 5rem;
+      //  margin-right: 1rem;
+        margin-left: auto;
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: 500;
+        order: 1;
+    }
+}
+@media screen and  (min-width: 1150px) {
     .lowerOnlineBtn{
         @include desktopButton;
         color:white;
@@ -243,7 +293,7 @@ h4{
        "titleTwo imgTwo"
        "textTwo imgTwo"
        "btnTwo imgTwo"
-       ". imgTwo";
+        ". imgTwo";
 
       margin-bottom: 6rem;
      
@@ -258,6 +308,9 @@ h4{
     .infoImgOne{
         grid-area: imgOne;
         object-fit: cover;
+       // grid-column: 1;
+       // grid-row-start: 1;
+       // grid-row-end: 5;
     }
 }
 
@@ -276,6 +329,8 @@ h4{
         margin-right: 15%;
         text-align: left;
         margin-top: 2rem;
+       // grid-column: 2;
+       // grid-row: 1;
     }
 }
 
@@ -292,6 +347,8 @@ h4{
         margin-right: 15%;
         margin-top: 1rem;
         margin-bottom: 1rem;
+       // grid-column: 2;
+       // grid-row: 2;
     }
 }
 .infoBtnOne{
@@ -312,7 +369,10 @@ h4{
             grid-area: btnOne;
             margin-left: 17%;
             margin-right: auto;
-            margin-top: 1rem; 
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem; 
+           // grid-column: 2;
+           // grid-row: 3;
         }
 }
 
@@ -322,7 +382,11 @@ h4{
 @media screen and  (min-width: 800px) {
     .infoImgTwo{
         grid-area: imgTwo;
-        object-fit: fill;
+        object-fit: cover;
+      //  grid-column: 2;
+      //  grid-row-start: 5;
+       // grid-row-end: 9;
+
     }
 }
 .infoTitleTwo{
@@ -376,6 +440,7 @@ h4{
             grid-area: btnTwo;
             margin-left: 17%;
             margin-right: auto;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem; 
         }
 }
