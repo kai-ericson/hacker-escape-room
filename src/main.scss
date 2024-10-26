@@ -9,6 +9,7 @@ $mediumBlue: #36769d;
 $navyBlue: #011827;
 $grey: #B6BDB5;
 $mediumScreen: 1150px;
+$miniScreen: 300px;
 
 @mixin desktopButton{
     padding-top: 0.8em;
@@ -89,7 +90,7 @@ h4{
     } 
 }
 
-@media screen and  (max-width: 300px) {
+@media screen and  (max-width: $miniScreen) {
     .onSiteBtn{
         padding-left: 1em;
         padding-right: 1em;
@@ -147,7 +148,7 @@ h4{
     }
 }
 
-@media screen and  (max-width: 300px) {
+@media screen and  (max-width: $miniScreen) {
     .lowerOnSiteBtn{
         padding-left: 1em;
         padding-right: 1em;
