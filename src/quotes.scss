@@ -1,33 +1,31 @@
-
+$mediumScreen: 1150px;
 
 .quotes{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
-@media screen and  (min-width: 800px) {
+
+@media screen and  (min-width: $mediumScreen) {
     .quotes{
         margin-left: auto;
         margin-right: auto;
     }
 }
-@media screen and  (min-width: 1150px) {
+
+@media screen and  (min-width: $mediumScreen) {
     .quotes{
         margin-left: auto;
         margin-right: auto;
     }
 }
+
 .quoteOne{
     display: flex;
     text-align: left;
+    max-width: 500px;
 }
-@media screen and  (min-width: 800px) {
-    .quoteOne{
-        display: flex;
-        width: 20%;
-    }
-}
-@media screen and (min-width: 1150px){
+
+@media screen and (min-width: $mediumScreen){
     .quoteOne{
         width: 45%;
         margin-left: 10%;
@@ -41,18 +39,14 @@
         margin-left: auto;
     }  
 }
+
 .quoteTwo{
     display: none;
 }
-@media screen and  (min-width: 800px) {
+
+@media screen and (min-width: $mediumScreen) {
     .quoteTwo{
         display: flex;
-        margin-left: 7rem;
-        width: 20%;
-    }
-}
-@media screen and (min-width: 1150px) {
-    .quoteTwo{
         text-align: left;
         width: 45%;
         margin-left: 1%;
@@ -74,7 +68,8 @@
     margin: 1rem;
     padding-top: 1rem;
 }
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: $mediumScreen) {
     .quoteImage{
         width: 5em;
         height: 5em;
@@ -86,22 +81,23 @@
     font-size: 24px;
     width:90%;
 }
-@media screen and  (min-width: 800px) {
+
+@media screen and  (min-width: $mediumScreen) {
     .quoteText{
         margin-right: 0rem;
         width: auto;
     }
-    
 }
+
 .quoteFacts{
     font-size: 18px;
     margin-top: -1em;
     margin-bottom: 5em;
     width: 90%;
 }
-@media screen and  (min-width: 800px) {
+
+@media screen and  (min-width: $mediumScreen) {
     .quoteFacts{
         width: 17rem;
     }
-    
 }

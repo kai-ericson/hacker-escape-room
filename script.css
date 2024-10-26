@@ -6,7 +6,7 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   header {
     display: grid;
     z-index: 1;
@@ -21,7 +21,7 @@ h1 {
   font-weight: 600;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   h1 {
     width: 100%;
     margin-top: -3.2rem;
@@ -42,7 +42,7 @@ h1 {
   object-fit: cover;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .headImg {
     margin-top: -144px;
   }
@@ -51,7 +51,7 @@ nav {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -77,37 +77,12 @@ nav {
     color: #8ACFE5;
   }
 }
-@media screen and (min-width: 1150px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #011827;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 0rem;
-    flex-direction: column;
-  }
-  .menu {
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .menu li {
-    display: inline;
-    margin-right: 5rem;
-  }
-  li:hover {
-    cursor: pointer;
-    color: #8ACFE5;
-  }
-}
 h2 {
   font-size: 32px;
+  margin-left: 2.5rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   h2 {
     font-size: 36px;
     text-align: center;
@@ -120,12 +95,6 @@ h2 {
   margin-left: 1rem;
 }
 
-/*@media screen and  (min-width: 1250px) {
-    .roomCards{
-        //margin-left: auto;
-      //  margin-right: auto;
-    }
-}*/
 .roomCard {
   width: 363px;
   height: 446px;
@@ -136,7 +105,7 @@ h2 {
   display: inline-block;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .roomCard {
     margin-left: 2.5rem;
   }
@@ -278,7 +247,7 @@ h5 {
   flex-direction: row;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .quotes {
     margin-left: auto;
     margin-right: auto;
@@ -293,14 +262,9 @@ h5 {
 .quoteOne {
   display: flex;
   text-align: left;
+  max-width: 500px;
 }
 
-@media screen and (min-width: 800px) {
-  .quoteOne {
-    display: flex;
-    width: 20%;
-  }
-}
 @media screen and (min-width: 1150px) {
   .quoteOne {
     width: 45%;
@@ -318,15 +282,9 @@ h5 {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
-  .quoteTwo {
-    display: flex;
-    margin-left: 7rem;
-    width: 20%;
-  }
-}
 @media screen and (min-width: 1150px) {
   .quoteTwo {
+    display: flex;
     text-align: left;
     width: 45%;
     margin-left: 1%;
@@ -347,7 +305,7 @@ h5 {
   padding-top: 1rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .quoteImage {
     width: 5em;
     height: 5em;
@@ -359,7 +317,7 @@ h5 {
   width: 90%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .quoteText {
     margin-right: 0rem;
     width: auto;
@@ -372,7 +330,7 @@ h5 {
   width: 90%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .quoteFacts {
     width: 17rem;
   }
@@ -387,7 +345,7 @@ body {
   margin: 0px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   body {
     display: grid;
   }
@@ -396,7 +354,7 @@ button {
   border-radius: 3px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   button {
     border-radius: 4px;
   }
@@ -415,7 +373,7 @@ h4 {
   margin-bottom: 0px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .buttons {
     display: flex;
     flex-direction: row;
@@ -437,7 +395,7 @@ h4 {
   display: flex;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .onSiteBtn {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -446,11 +404,6 @@ h4 {
     order: 2;
     margin-top: -50px;
     margin-bottom: 3em;
-    margin-right: 40%;
-  }
-}
-@media screen and (min-width: 1150px) {
-  .onSiteBtn {
     margin-left: 1rem;
     margin-right: auto;
   }
@@ -476,7 +429,7 @@ h4 {
   margin-bottom: 2em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .onlineBtn {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -491,10 +444,6 @@ h4 {
     text-decoration: none;
     font-weight: 500;
     order: 1;
-  }
-}
-@media screen and (min-width: 1150px) {
-  .onlineBtn {
     margin-right: 1rem;
   }
 }
@@ -514,18 +463,6 @@ h4 {
   display: flex;
 }
 
-@media screen and (min-width: 800px) {
-  .lowerOnSiteBtn {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-left: 3em;
-    padding-right: 3em;
-    order: 2;
-    margin-top: 5rem;
-    margin-bottom: 3em;
-    margin-right: 40%;
-  }
-}
 @media screen and (min-width: 1150px) {
   .lowerOnSiteBtn {
     margin-left: 1rem;
@@ -553,23 +490,6 @@ h4 {
   margin-bottom: 4em;
 }
 
-@media screen and (min-width: 800px) {
-  .lowerOnlineBtn {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-left: 3em;
-    padding-right: 3em;
-    color: white;
-    background-color: #E3170A;
-    margin-bottom: 3em;
-    margin-top: 5rem;
-    margin-left: auto;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: 500;
-    order: 1;
-  }
-}
 @media screen and (min-width: 1150px) {
   .lowerOnlineBtn {
     margin-right: 1rem;
@@ -598,7 +518,7 @@ h4 {
   font-size: 24px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .storyBtn {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -612,7 +532,7 @@ h4 {
   margin-top: 2.5em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .storyText {
     width: 50%;
     margin-left: auto;
@@ -621,7 +541,7 @@ h4 {
     padding-bottom: 1rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoBlock {
     display: grid;
     width: 100%;
@@ -635,7 +555,7 @@ h4 {
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoImgOne {
     grid-area: imgOne;
     object-fit: cover;
@@ -650,7 +570,7 @@ h4 {
   margin-bottom: 0px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoTitleOne {
     grid-area: titleOne;
     margin-left: 15%;
@@ -666,7 +586,7 @@ h4 {
   font-size: 24px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoTextOne {
     grid-area: textOne;
     margin-left: 15%;
@@ -690,7 +610,7 @@ h4 {
   margin-right: 1rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoBtnOne {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -707,7 +627,7 @@ h4 {
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoImgTwo {
     grid-area: imgTwo;
     object-fit: cover;
@@ -722,7 +642,7 @@ h4 {
   margin-bottom: 0px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoTitleTwo {
     grid-area: titleTwo;
     margin-left: 15%;
@@ -738,7 +658,7 @@ h4 {
   font-size: 24px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoTextTwo {
     grid-area: textTwo;
     margin-left: 15%;
@@ -762,7 +682,7 @@ h4 {
   margin-right: 1rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   .infoBtnTwo {
     padding-top: 0.8em;
     padding-bottom: 0.8em;

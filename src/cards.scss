@@ -3,28 +3,27 @@ $lightBlue: #8ACFE5;
 $mediumBlue: #36769d;
 $navyBlue: #011827;
 $grey: #B6BDB5;
+$mediumScreen: 1150px;
 
 h2{
     font-size: 32px;
+    margin-left: 2.5rem;
 }
-@media screen and  (min-width: 800px) {
+
+@media screen and  (min-width: $mediumScreen) {
     h2{
         font-size: 36px;
         text-align: center;
     }
 }
+
 .roomCards{
     display: flex;
     flex-direction: row;
     overflow: auto;
     margin-left: 1rem;
 }
-/*@media screen and  (min-width: 1250px) {
-    .roomCards{
-        //margin-left: auto;
-      //  margin-right: auto;
-    }
-}*/
+
 .roomCard{
     width: 363px;
     height: 446px;
@@ -32,49 +31,49 @@ h2{
     margin-left: 2.5rem;
     box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.1);
     border-radius: 10px;  
-    display: inline-block;
-    
+    display: inline-block;  
 }
-@media screen and  (min-width: 800px) {
+
+@media screen and  (min-width: $mediumScreen) {
     .roomCard{
-        margin-left: 2.5rem;
-        
+        margin-left: 2.5rem;  
     }
 }
+
 .roomImg{
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
+
 .rating{
     display: flex;
-
 }
 
 .ratingStar{
     display: flex;
     height: 15px;
-    margin-left: 6px;
-    
+    margin-left: 6px; 
 }
+
 .participantInfo{
     display: flex;
     padding-left: 1rem;
     font-size: 14px;
-   
 }
+
 .roomInfo{
     padding-left: 17px;
-    padding: 17px;
-    
+    padding: 17px; 
 }
+
 .roomText{
     width: 363px;
 }
+
 .oneRow{
     display: flex;
     flex-direction: row;
-
 }
 
 .bookRoom{
