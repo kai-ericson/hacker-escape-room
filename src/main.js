@@ -1,5 +1,5 @@
 const menuButton = document.querySelector(".hamburgerButton");
-const app = document.querySelector("body");
+//const app = document.querySelector("body");
 const menu=document.querySelector(".mobileMenu");
 const closeButton=document.querySelector(".closeButton");
 menuButton.addEventListener("click", showMenu);
