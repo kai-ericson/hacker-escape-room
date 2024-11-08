@@ -58,6 +58,7 @@ h1{
     margin-top: 1rem;
     height: 36px;
     background-color: $navyBlue;
+
     .hamburgerButtonLine{
         width: 3rem;
         height: 5px;
@@ -94,7 +95,6 @@ h1{
         display: flex;
         margin-left: auto;
         margin-right: 1.5rem;
-       // margin-top: 0rem;
         font-size: 48px;
         background-color: $navyBlue;
         border: none;
@@ -102,10 +102,10 @@ h1{
         text-decoration: none;
         margin-right: 1rem;
     }
-
     .menu{
         list-style: none;
-        margin-top: 15rem;
+        vertical-align: center;
+        padding-top: 10rem;
         li{
             align-items: center;
             font-size: 36px;
